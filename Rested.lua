@@ -261,7 +261,7 @@ function RESTED.init()
     RESTED.strings["Stop"]         = "@RStopping @WAuto-Updates"
     RESTED.strings["Immortal"]     = "You are @Rimmortal@W, you do not require rest!"
     RESTED.strings["Zero"]         = "You are not rested, you need a nap!"
-    RESTED.strings["Max"]          = "You are fully rested!"
+    RESTED.strings["Max"]          = "You are fully rested! (150%)"
     RESTED.strings["InvalidSet"]   = "Invalid @RSET @Wcommand!"
     RESTED.strings["InvalidCmd"]   = "Invalid command!"
     RESTED.strings["SetRef"]       = "Setting refresh interval to every @Y%s @Wseconds"
@@ -344,9 +344,9 @@ function RESTED.Rested()
             RESTED.say(RESTED.colorize(RESTED.strings["Zero"], true))
         else    
             maxRest = UnitXPMax("player") * 1.5
-            percent = math.floor((rested * 100) / maxRest)
+            percent = math.floor((rested * 150) / maxRest)
             
-            if percent == 100 then
+            if percent == 150 then
                 RESTED.say(RESTED.colorize(RESTED.strings["Max"], true))
                 msg = RESTED.strings["Max"]
             else
