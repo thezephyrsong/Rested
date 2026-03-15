@@ -22,6 +22,7 @@ Change Log:
     04/07/2021: Added debug mode
     04/07/2021: Updated the help
     04/08/2021: Formatted strings allowing more localization
+    15/03/2026: Made it out of the 150% rested exp you can acquire
 
 
 Todo:
