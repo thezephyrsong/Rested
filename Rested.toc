@@ -1,6 +1,6 @@
-## Interface: 11100
+## Interface: 11200
 ## Title: Rested XP
 ## Notes: Shows your rested xp.. Made for Turtle Wow
-## Author: Quiver
+## Author: ZephZae (forked from Quiver)
 ## SavedVariablesPerCharacter: isAutoStart, refreshTime, isSmartMode
 Rested.lua
